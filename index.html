@@ -15,6 +15,8 @@
             font-family: "Poppins", sans-serif;
         }
     </style>
+    <title>To do list</title>
+    <link rel="icon" type="image/x-icon" href="./assets/checkbox.png">
   </head>
   <body id="main-bg-color" class="ml-35 mr-35 mt-6 mb-15 bg-amber-50">
     <!-- Navbar Section -->
@@ -31,7 +33,7 @@
             class="flex items-center justify-center p-3 gap-4 bg-[#F4F7FF] rounded-4xl"
           >
             <img src="./assets/checkbox.png" alt="checkbox" />
-            <h1 class="text-2xl"><b>23</b></h1>
+            <h1 class="text-2xl"><b id="task-completed">23</b></h1>
           </div>
           <div>
             <button
@@ -60,13 +62,14 @@
                 </div>
                 <div class="flex flex-col">
                   <h1 class="text-sm">Task Assigned</h1>
-                  <p id="task-to-complete" class="text-2xl">05</p>
+                  <p id="task-to-complete" class="text-2xl">06</p>
                 </div>
               </div>
-              <div class="col-span-2 flex justify-center items-center gap-4 bg-gradient-to-br from-blue-500 to-blue-200 rounded-xl p-4">
+              
+              <a href="./blog.html" class="col-span-2 flex justify-center items-center gap-4 bg-gradient-to-br from-blue-500 to-blue-200 rounded-xl p-4">
                 <img src="./assets/board.png" alt="board">
                 <h1 class="text-lg">Discover Something<br>New Today!</h1>
-              </div>
+              </a>
               <div class="flex justify-center items-center rounded-xl gap-4 p-4 bg-[#F4F7FF]">
                 <div class="bg-white rounded-full p-2"><img src="./assets/calender.png" alt="calender"></div>
                 <div class="flex flex-col">
@@ -87,7 +90,8 @@
                         <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
                         
                         <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
-                            Debug using Chrome DevTools, check for overlapping...
+                          Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly
                         </p>
                 
                         <div class="border-t border-dashed border-gray-300 my-4"></div>
@@ -97,16 +101,16 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                            <button type="button" id="fix-mobile-btn" class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
                         </div>
                     </div>
                     <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
-                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">CloudSync</span>
                         
-                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        <h2 class="text-lg font-bold mt-3">Add Dark Mode</h2>
                         
                         <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
-                            Debug using Chrome DevTools, check for overlapping...
+                          Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
                         </p>
                 
                         <div class="border-t border-dashed border-gray-300 my-4"></div>
@@ -116,19 +120,20 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                            <button id="dark-mode" class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
                         </div>
                     </div>
                 </div>
                 <!-- row end -->
                 <div class="grid grid-rows-2 p-2 gap-4">
                     <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
-                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">SwiftPay</span>
                         
-                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        <h2 class="text-lg font-bold mt-3">Optimize Home Page</h2>
                         
                         <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
-                            Debug using Chrome DevTools, check for overlapping...
+                          Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly
                         </p>
                 
                         <div class="border-t border-dashed border-gray-300 my-4"></div>
@@ -138,16 +143,17 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                            <button id="home-page" class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
                         </div>
                     </div>
                     <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
-                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">Meta</span>
                         
-                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        <h2 class="text-lg font-bold mt-3">Add new emoji</h2>
                         
                         <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
-                            Debug using Chrome DevTools, check for overlapping...
+                          Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly
                         </p>
                 
                         <div class="border-t border-dashed border-gray-300 my-4"></div>
@@ -157,18 +163,19 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                            <button id="emoji" class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
                         </div>
                     </div>
                 </div>
                 <div class="grid grid-rows-2 p-2 gap-4">
                     <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
-                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">Google LLC</span>
                         
-                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        <h2 class="text-lg font-bold mt-3">Integrate OpenAI API</h2>
                         
                         <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
-                            Debug using Chrome DevTools, check for overlapping...
+                          Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly
                         </p>
                 
                         <div class="border-t border-dashed border-gray-300 my-4"></div>
@@ -178,16 +185,17 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                            <button id="openai" class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
                         </div>
                     </div>
                     <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
-                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">Glassdoar</span>
                         
-                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        <h2 class="text-lg font-bold mt-3">Improve Job Searching</h2>
                         
                         <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
-                            Debug using Chrome DevTools, check for overlapping...
+                          Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                          and ensure onClick works properly
                         </p>
                 
                         <div class="border-t border-dashed border-gray-300 my-4"></div>
@@ -197,7 +205,7 @@
                                 <p class="text-gray-500 text-xs">Deadline</p>
                                 <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
                             </div>
-                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                            <button id="job-search" class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
                         </div>
                     </div>
                 </div>
@@ -226,5 +234,6 @@
     </section>
 
     <script src="./script/bg-color.js"></script>
+    <script src="./script/complete.js"></script>
   </body>
 </html>
