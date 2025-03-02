@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        h1, h2, h3, h4, h5, h6, button, p{
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+  </head>
+  <body id="main-bg-color" class="ml-35 mr-35 mt-6 mb-15 bg-amber-50">
+    <!-- Navbar Section -->
+    <section>
+      <div class="flex justify-between bg-white p-3 rounded-2xl shadow-md">
+        <div class="flex items-center justify-center gap-1.5">
+          <div><img src="./assets/logo.png" alt="logo" /></div>
+          <div>
+            <h1 class="text-3xl">Dev<b>Board</b></h1>
+          </div>
+        </div>
+        <div class="flex items-center justify-center gap-10">
+          <div
+            class="flex items-center justify-center p-3 gap-4 bg-[#F4F7FF] rounded-4xl"
+          >
+            <img src="./assets/checkbox.png" alt="checkbox" />
+            <h1 class="text-2xl"><b>23</b></h1>
+          </div>
+          <div>
+            <button
+              id="bg-color-btn"
+              class="rounded-full cursor-pointer p-2 bg-[#F4F7FF]"
+            >
+              <img src="./assets/theme-btn.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4">
+      <div class="grid grid-cols-4 gap-4">
+        <!-- task column -->
+        <div class="col-span-3 bg-white rounded-xl p-4">
+          <!-- task column elements -->
+          <div>
+            <!-- Dashboard -->
+            <div class="grid grid-cols-4 gap-4">
+              <div
+                class="bg-[#F4F7FF] rounded-xl flex justify-center items-center gap-4 p-4"
+              >
+                <div class="p-3 bg-white rounded-full">
+                  <img src="./assets/checkbox.png" alt="checkbox" />
+                </div>
+                <div class="flex flex-col">
+                  <h1 class="text-sm">Task Assigned</h1>
+                  <p id="task-to-complete" class="text-2xl">05</p>
+                </div>
+              </div>
+              <div class="col-span-2 flex justify-center items-center gap-4 bg-gradient-to-br from-blue-500 to-blue-200 rounded-xl p-4">
+                <img src="./assets/board.png" alt="board">
+                <h1 class="text-lg">Discover Something<br>New Today!</h1>
+              </div>
+              <div class="flex justify-center items-center rounded-xl gap-4 p-4 bg-[#F4F7FF]">
+                <div class="bg-white rounded-full p-2"><img src="./assets/calender.png" alt="calender"></div>
+                <div class="flex flex-col">
+                    <h1>Wed,</h1>
+                    <p id="date-today"><b>Jul 28 2025</b></p>
+                </div>
+              </div>
+            </div>
+            <div class="border-t border-dashed border-gray-300 my-4"></div>
+            <!-- Tasks -->
+            <div class="grid grid-cols-3 gap-4">
+                <!-- row start -->
+                <div class="grid grid-rows-2 p-2 gap-4">
+                    <!-- card -->
+                    <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        
+                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        
+                        <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
+                            Debug using Chrome DevTools, check for overlapping...
+                        </p>
+                
+                        <div class="border-t border-dashed border-gray-300 my-4"></div>
+                
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        
+                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        
+                        <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
+                            Debug using Chrome DevTools, check for overlapping...
+                        </p>
+                
+                        <div class="border-t border-dashed border-gray-300 my-4"></div>
+                
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- row end -->
+                <div class="grid grid-rows-2 p-2 gap-4">
+                    <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        
+                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        
+                        <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
+                            Debug using Chrome DevTools, check for overlapping...
+                        </p>
+                
+                        <div class="border-t border-dashed border-gray-300 my-4"></div>
+                
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        
+                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        
+                        <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
+                            Debug using Chrome DevTools, check for overlapping...
+                        </p>
+                
+                        <div class="border-t border-dashed border-gray-300 my-4"></div>
+                
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-rows-2 p-2 gap-4">
+                    <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        
+                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        
+                        <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
+                            Debug using Chrome DevTools, check for overlapping...
+                        </p>
+                
+                        <div class="border-t border-dashed border-gray-300 my-4"></div>
+                
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                        </div>
+                    </div>
+                    <div class="bg-[#F4F7FF] shadow-lg rounded-2xl p-6 border border-gray-100">
+                        <span class="bg-white text-sm px-3 py-1 rounded-lg">ShopEase</span>
+                        
+                        <h2 class="text-lg font-bold mt-3">Fix Mobile Button Issue</h2>
+                        
+                        <p class="text-gray-500 text-sm bg-white p-3 rounded-lg mt-2">
+                            Debug using Chrome DevTools, check for overlapping...
+                        </p>
+                
+                        <div class="border-t border-dashed border-gray-300 my-4"></div>
+                
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p class="text-gray-500 text-xs">Deadline</p>
+                                <p class="text-gray-900 font-bold text-sm">21 March 2025</p>
+                            </div>
+                            <button class="bg-blue-600 cursor-pointer text-white text-sm px-4 py-1.5 rounded-lg font-medium">Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+          <!-- History -->
+          <div class="flex flex-col bg-white rounded-xl justify-center p-4 gap-4">
+            <div class="flex justify-center items-center gap-4 p-4">
+                <img src="./assets/activity.png" alt="activity">
+                <h1>Activity Log</h1>
+            </div>
+            <div class="flex justify-center items-center"><button class="bg-blue-700 p-2 rounded-xl w-1/2">Clear History</button></div>
+            <div class="border-t border-dashed border-gray-300 my-4"></div>
+            <div class="flex flex-col gap-4">
+            <div class="bg-[#F4F7FF] p-3 rounded-xl">You have completed the task Fix mobile button issue at time</div>
+            <div class="bg-[#f4f7ff] p-3 rounded-xl">You have completed The Task Add Dark Mode at</div>
+            <div class="bg-[#f4f7ff] p-3 rounded-xl">You have completed The Task Optimize Home Page at</div>
+            <div class="bg-[#f4f7ff] p-3 rounded-xl">You have completed The Task Add New Emoji at</div>
+            <div class="bg-[#f4f7ff] p-3 rounded-xl">You have completed The Task Integrate Open AI at</div>
+            <div class="bg-[#f4f7ff] p-3 rounded-xl">You have completed The Task Improve Job Searching at</div>
+            </div>
+          </div>
+        </div>
+        <!-- History -->
+    </section>
+
+    <script src="./script/bg-color.js"></script>
+  </body>
+</html>
